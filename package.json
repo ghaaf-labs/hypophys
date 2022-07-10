@@ -1,0 +1,14 @@
+{
+  "name": "hypophys",
+  "version": "0.0.1",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hypophys/hypophys.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hypophys/hypophys/issues"
+  },
+  "homepage": "https://github.com/hypophys/hypophys#readme"
+}
