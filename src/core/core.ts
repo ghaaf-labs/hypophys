@@ -2,6 +2,7 @@ import { Component, HypophysSupportedNode } from "./component";
 import React from "react";
 
 export function mount(node: HypophysSupportedNode, parent: HTMLElement): void {
+  parent.innerHTML = "";
   if (node instanceof Component) {
     node.mount(parent);
   } else {

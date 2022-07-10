@@ -1,5 +1,6 @@
 import React from "react";
-import Hypophys from "../../../core/core";
+import Hypophys, { createELement } from "../../../core/core";
+import GetMountableComponent from "../../../react/getMountableComponent";
 import HypophysVue from "../../vue/hypophys";
 
 interface HelloState {
@@ -23,12 +24,15 @@ export default class Square extends React.Component<any, HelloState> {
   }
 
   render() {
+    const component = createELement("vue", HypophysVue);
+
     return (
       <>
         <h1>
           Hello from react !! counter : {this.state.value}
           <button onClick={this.onClick}>Click me</button>
         </h1>
+        <GetMountableComponent component={component} />
       </>
     );
   }
