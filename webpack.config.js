@@ -30,11 +30,6 @@ module.exports = {
             jsc: {
               target: "es2015",
               externalHelpers: true,
-              // transform: {
-              //   react: {
-              //     runtime: "automatic",
-              //   },
-              // },
               parser: {
                 jsx: "preserve",
                 syntax: "typescript",
